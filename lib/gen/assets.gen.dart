@@ -23,10 +23,24 @@ class $AssetsImagesGen {
   List<AssetGenImage> get values => [logo, testImage];
 }
 
+class $AssetsTranslationsGen {
+  const $AssetsTranslationsGen();
+
+  /// File path: assets/translations/ar-EG.json
+  String get arEG => 'assets/translations/ar-EG.json';
+
+  /// File path: assets/translations/en-US.json
+  String get enUS => 'assets/translations/en-US.json';
+
+  /// List of all assets
+  List<String> get values => [arEG, enUS];
+}
+
 class Assets {
   Assets._();
 
   static const $AssetsImagesGen images = $AssetsImagesGen();
+  static const $AssetsTranslationsGen translations = $AssetsTranslationsGen();
 }
 
 class AssetGenImage {
